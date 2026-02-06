@@ -69,7 +69,7 @@ export default function Testimonial() {
       <div
         ref={glowRef}
         className="absolute w-[600px] h-[300px] rounded-full
-        bg-[radial-gradient(circle,rgba(0,255,120,0.25),transparent_70%)]
+        bg-[radial-gradient(circle,rgba(0,260,220,0.39),transparent_70%)]
         blur-[120px]"
       />
 

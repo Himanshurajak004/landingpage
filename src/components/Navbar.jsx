@@ -43,36 +43,36 @@ export default function Navbar() {
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-3">
             <img
-              src="/wearewebsitedesigner.png"
-              alt="We Are Website Designers"
-              className="h-8 object-contain brightness-125 contrast-125"
+              src="/logo while.png"
+              alt=""
+              className="h-10 object-contain brightness-125 contrast-125"
               style={{ filter: "drop-shadow(0 0 6px rgba(255,255,255,0.25))" }}
             />
             {/* Optional text – remove if you want image-only logo */}
             <span className="hidden sm:block text-white font-semibold tracking-wide">
-              WeAreWebsiteDesigners
+             
             </span>
           </Link>
 
           {/* MENU (SCROLL BASED) */}
           <ul className="hidden md:flex gap-8 text-sm text-white/90 font-medium">
             <li>
-              <a href="#best-sellers" className="hover:text-white transition">
+              <a href="https://kandyforscale.com/collections/best-sellers" className="hover:text-white transition">
                 Best Sellers
               </a>
             </li>
             <li>
-              <a href="#services" className="hover:text-white transition">
+              <a href="https://kandyforscale.com/pages/services-list" className="hover:text-white transition">
                 Done For You
               </a>
             </li>
             <li>
-              <a href="#case-studies" className="hover:text-white transition">
+              <a href="https://kandyforscale.com/pages/case-studies" className="hover:text-white transition">
                 Case Studies
               </a>
             </li>
             <li>
-              <a href="#portfolio" className="hover:text-white transition">
+              <a href="https://kandyforscale.com/pages/portfolio" className="hover:text-white transition">
                 Creative Portfolio
               </a>
             </li>

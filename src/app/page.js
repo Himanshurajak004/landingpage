@@ -12,17 +12,21 @@ import Quote2 from "../components/Quote2";
 import SuccessStories from "@/components/SuccessStories";
 import FullCirclePerformance from "@/components/FullCirclePerformance";
 import NumbersGoVroom from "@/components/NumbersGoVroom";
+import WhyUsSection from "@/components/WhyUsSection";
+import TrustedBrands from "@/components/TrustedBrands";
 
 export default function Page() {
   return (
     <>
       <Navbar />
       <Hero />
+      <TrustedBrands />
       <Service />
       <NumbersGoVroom />
       <FullCirclePerformance />
       <Quote2 />
         <SuccessStories />
+        <WhyUsSection />
        <CreativeTeam /> 
        <Process />  
        <Quote />  
