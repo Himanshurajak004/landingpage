@@ -34,7 +34,7 @@ export default function Page() {
         <WhyUsSection />
        <CreativeTeam /> 
        
-       public/logo while.png 
+      
       <Testimonials />
       <CaseStudies />
       <OwnBrands />

@@ -33,7 +33,7 @@ const items = [
   },
   {
     title: "Email Marketing, Sorted",
-    desc: "Email strategy, automations, campaigns, email copy & designs — all focused on generating more revenue.",
+    desc: "Email strategy, automations, campaigns, email copy & designs -- all focused on generating more revenue.",
     glow: "from-pink-500/30 to-red-500/10",
     icon: "✉️",
     image: "fir4.png",
