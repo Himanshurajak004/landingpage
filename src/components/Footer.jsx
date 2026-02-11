@@ -1,10 +1,12 @@
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#ef4444] via-[#8b1c1c] to-black" />
+      
+      {/* Background (Brown → Black Smooth Fade) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#5a341f] via-[#3a2114] to-black" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 py-20 text-white">
+        
         {/* Top Row */}
         <div className="grid gap-12 md:grid-cols-4">
           
@@ -23,7 +25,6 @@ export default function Footer() {
           </div>
 
           {/* Explore */}
-          {/* 🔹 EXPLORE – CLICKABLE */}
           <div>
             <h4 className="mb-4 text-lg font-semibold">Explore</h4>
             <ul className="space-y-2 text-sm">
@@ -35,7 +36,7 @@ export default function Footer() {
               ].map((item) => (
                 <li key={item.name}>
                   <a
-                    href={item.link} // 👈 yahan tu apna real link dalega
+                    href={item.link}
                     className="inline-block text-white/80 transition hover:text-white hover:translate-x-1"
                   >
                     {item.name}
@@ -45,7 +46,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* SERVICES – CLICKABLE */}
+          {/* SERVICES */}
           <div>
             <h4 className="mb-4 text-lg font-semibold">Services</h4>
             <ul className="space-y-2 text-sm">
@@ -63,7 +64,7 @@ export default function Footer() {
               ].map((service) => (
                 <li key={service.name}>
                   <a
-                    href={service.link} // 👈 yahan tu apna link daalega
+                    href={service.link}
                     className="text-white/80 transition hover:text-white hover:translate-x-1 inline-block"
                   >
                     {service.name}
@@ -84,7 +85,8 @@ export default function Footer() {
               href="https://calendly.com/wearewebsitedesigners/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block rounded-lg bg-white px-6 py-3 font-semibold text-black transition hover:scale-105 hover:bg-white/90"
+              className="inline-block rounded-lg bg-white px-6 py-3 font-semibold
+                         text-black transition hover:scale-105 hover:bg-white/90"
             >
               Book Discovery Call →
             </a>
@@ -100,6 +102,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Wearewebsitedesigner. All rights reserved.
           </p>
         </div>
+
       </div>
     </footer>
   );

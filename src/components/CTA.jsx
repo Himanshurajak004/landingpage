@@ -17,7 +17,6 @@ export default function QuoteCTA() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // quote
       gsap.fromTo(
         quoteRef.current,
         { opacity: 0, y: 30 },
@@ -48,7 +47,6 @@ export default function QuoteCTA() {
         }
       );
 
-      // CTA block animation
       gsap.fromTo(
         [avatarRef.current, cardRef.current],
         { opacity: 0, y: 60 },
@@ -64,7 +62,6 @@ export default function QuoteCTA() {
         }
       );
 
-      // button pulse (FULL CTA feel)
       gsap.to(btnRef.current, {
         scale: 1.06,
         repeat: -1,
@@ -83,8 +80,9 @@ export default function QuoteCTA() {
       ref={sectionRef}
       className="relative min-h-[120vh] overflow-hidden"
     >
-      {/* BACKGROUND */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-[#2a0d12] to-[#ef4444]" />
+      {/* ✅ UPDATED BACKGROUND (Black → Brown) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black
+       via-[#1a0f08] to-[#5a341f]" />
 
       {/* QUOTE */}
       <div className="relative z-10 pt-40 pb-40 text-center px-6">
@@ -115,7 +113,6 @@ export default function QuoteCTA() {
         ref={cardWrapRef}
         className="relative z-10 flex justify-center pb-32"
       >
-        
         <div
           ref={avatarRef}
           className="absolute -top-12 left-1/2 -translate-x-1/2 z-20"
@@ -127,7 +124,6 @@ export default function QuoteCTA() {
           />
         </div>
 
-        
         <div
           ref={cardRef}
           className="mt-16 w-full max-w-xl rounded-2xl
