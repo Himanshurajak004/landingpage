@@ -92,7 +92,7 @@ export default function Navbar() {
         ref={navRef}
         className="fixed top-0 left-0 right-0 z-50 w-full"
       >
-        <div className="mx-auto max-w-7xl px-4">
+        <div className="mx-auto max-w-6xl px-4">
           <div className="relative flex h-16 items-center justify-between">
 
             {/* MOBILE MENU BUTTON */}

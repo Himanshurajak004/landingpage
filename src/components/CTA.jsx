@@ -148,7 +148,7 @@ export default function QuoteCTA() {
             rel="noopener noreferrer"
             className="mt-8 inline-block rounded-xl
                        bg-[#ff4d4d]
-                       px-10 py-4 text-lg font-semibold text-white
+                       px-10 py-4 text-sm font-semibold text-white
                        shadow-xl"
           >
             Book Your Discovery Call →

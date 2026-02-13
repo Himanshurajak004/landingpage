@@ -36,7 +36,7 @@ export default function Hero() {
           }}
         />
 
-        {/* ================= TEXT ================= */}
+        {/* TEXT */}
         <div className="relative z-10 mx-auto max-w-5xl pt-32 pb-10 px-6 text-center text-white">
           <div
             ref={badgeRef}
@@ -72,7 +72,7 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* ================= IMAGE (NO NEW BG) ================= */}
+        {/* IMAGE (NO NEW BG)  */}
         <div
           ref={imageWrapRef}
           className="relative z-10 flex justify-center px-4 pb-24"
@@ -80,7 +80,7 @@ export default function Hero() {
           <img
             src="/newhero.png"
             alt="Brand results"
-            className="w-full max-w-7xl object-contain"
+            className="w-full max-w-7.4xl  object-contain"
           />
         </div>
       </section>
