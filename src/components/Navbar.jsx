@@ -128,8 +128,8 @@ export default function Navbar() {
             {/* DESKTOP MENU */}
             <ul className="hidden md:flex gap-8 text-sm text-white/90 font-medium">
               <li><a href="/best-sellers">Best Sellers</a></li>
-              <li><a href="https://kandyforscale.com/pages/services-list">Done For You</a></li>
-              <li><a href="https://kandyforscale.com/pages/case-studies">Case Studies</a></li>
+              <li><a href="/done-for-you">Done For You</a></li>
+              <li><a href="/case-studies">Case Studies</a></li>
               <li><a href="https://kandyforscale.com/pages/portfolio">Creative Portfolio</a></li>
             </ul>
 

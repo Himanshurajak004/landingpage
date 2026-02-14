@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Link from "next/link";
 
@@ -151,7 +151,7 @@ const products = [
   },
 ];
 
-// tag color mapping (same style, different colors)
+// TAG COLORS (unchanged)
 const tagColors = {
   CREATIVES: "bg-pink-500",
   ECOMMERCE: "bg-green-500",
@@ -161,6 +161,7 @@ const tagColors = {
 
 export default function ProductGrid() {
   const cardsRef = useRef([]);
+  const [activeTags, setActiveTags] = useState([]);
 
   useEffect(() => {
     gsap.fromTo(
@@ -176,11 +177,32 @@ export default function ProductGrid() {
     );
   }, []);
 
+  // 🔥 LISTEN TO HERO FILTER EVENTS
+  useEffect(() => {
+    const handler = (e) => {
+      const { value, checked } = e.detail;
+      setActiveTags((prev) =>
+        checked ? [...prev, value] : prev.filter((v) => v !== value)
+      );
+    };
+
+    window.addEventListener("FILTER_CHANGE", handler);
+    return () => window.removeEventListener("FILTER_CHANGE", handler);
+  }, []);
+
+  // 🔥 FILTER LOGIC ONLY
+  const filteredProducts =
+    activeTags.length === 0
+      ? products
+      : products.filter((p) => activeTags.includes(p.tag));
+
   return (
-    <section className="relative  bg-black py-24">
-      <div className="mx-auto max-w-7xl px-4 grid
-       grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {products.map((item, i) => (
+    <section className="relative bg-black py-24">
+      <div
+        className="mx-auto max-w-7xl px-4 grid
+        grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
+        {filteredProducts.map((item, i) => (
           <Link
             href={item.link}
             key={i}
@@ -190,7 +212,7 @@ export default function ProductGrid() {
           >
             {/* TAG */}
             <span
-              className={`absolute -top-4 left-1/2 -translate-x-1/2 
+              className={`absolute -top-4 left-1/2 -translate-x-1/2
               rounded-full px-7 py-1 text-xs font-semibold tracking-wide
               ${tagColors[item.tag]}`}
             >
@@ -208,7 +230,6 @@ export default function ProductGrid() {
 
             {/* CONTENT */}
             <div className="px-5 pb-6 text-white text-center">
-              {/* Rating */}
               <div className="flex justify-center mb-2 text-green-400 text-sm">
                 ★★★★★ <span className="text-white/70 ml-2">Rated Excellent</span>
               </div>
@@ -217,7 +238,6 @@ export default function ProductGrid() {
                 {item.title}
               </h3>
 
-              {/* Price */}
               <p className="mt-3 text-sm">
                 <span className="line-through text-white/40 mr-2">
                   {item.oldPrice}
@@ -232,7 +252,6 @@ export default function ProductGrid() {
                 Click to read more →
               </p>
 
-              {/* Buttons */}
               <button className="mt-4 w-full rounded-xl bg-red-500 py-3 text-sm font-semibold hover:bg-red-600 transition">
                 Add To Cart
               </button>

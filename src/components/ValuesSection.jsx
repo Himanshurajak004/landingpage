@@ -56,21 +56,21 @@ export default function ValuesSection() {
       desc: "For that, we can arrange something with our partners.",
       small: "Growth instead of comfort, always.",
       gradient: "from-purple-600 to-orange-500",
-      logo: "/logo1.png",
+      logo: "/v1.png",
     },
     {
       title: "We hate wasting time.",
       desc: "Approvals should take minutes, not days. That’s how money gets burned.",
       small: "Corporate bureaucracy is a no-no.",
       gradient: "from-cyan-600 to-emerald-500",
-      logo: "/logo2.png",
+      logo: "/v2.png",
     },
     {
       title: "We love dreaming up weird stuff.",
       desc: "Our hiring test is named after a banana. That pretty much sums it up.",
       small: "This helps us break through the noise.",
       gradient: "from-pink-600 to-indigo-500",
-      logo: "/logo3.png",
+      logo: "/v3.png",
     },
   ];
 

@@ -44,26 +44,28 @@ export default function NumbersGoVroom() {
 
         <div className="grid gap-6 md:grid-cols-3">
           {/* Card 1 */}
-          <div className="rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 p-8 text-white">
+          <div className="rounded-2xl bg-gradient-to-r
+           from-purple-500 to-pink-500 p-8 text-white">
             <p className="mb-3 text-sm opacity-80">
               revenue generated for clients since 2023
             </p>
             <h3 className="text-3xl font-bold">
               $
-              <span ref={(el) => (numbersRef.current[0] = el)} data-value="923009494">
+              <span ref={(el) => (numbersRef.current[0] = el)} data-value="78484018">
                 0
               </span>
             </h3>
           </div>
 
           {/* Card 2 */}
-          <div className="rounded-2xl bg-gradient-to-r from-sky-400 to-emerald-400 p-8 text-white">
+          <div className="rounded-2xl bg-gradient-to-r
+           from-sky-400 to-emerald-400 p-8 text-white">
             <p className="mb-3 text-sm opacity-80">
               record revenue from a single creative
             </p>
             <h3 className="text-3xl font-bold">
               $
-              <span ref={(el) => (numbersRef.current[1] = el)} data-value="3145382">
+              <span ref={(el) => (numbersRef.current[1] = el)} data-value="582700">
                 0
               </span>
             </h3>
@@ -75,7 +77,7 @@ export default function NumbersGoVroom() {
               creatives produced since 2023
             </p>
             <h3 className="text-3xl font-bold">
-              <span ref={(el) => (numbersRef.current[2] = el)} data-value="281401">
+              <span ref={(el) => (numbersRef.current[2] = el)} data-value="1744018">
                 0
               </span>
               +
