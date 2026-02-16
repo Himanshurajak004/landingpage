@@ -143,7 +143,7 @@ function Gallery({ title, subtitle, items, type }) {
             >
               <img
                 src={src}
-                alt=""
+                alt="/"
                 className={`w-full h-full ${
                   isStatic
                     ? "object-contain bg-white p-4"

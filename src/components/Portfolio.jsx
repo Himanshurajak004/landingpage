@@ -56,7 +56,7 @@ export default function HeroSection() {
 
         <div className="mt-12 flex justify-center">
           <img
-  src="/Donefor.png"
+  src="/bestseller.png"
   alt="Hero visual"
   className="
     w-[280px]
